@@ -2,12 +2,18 @@
   "name": "Dyfk",
   "version": "1.0.0",
   "homepage": "https://fotiotech.github.io/dyfk-e-com-app/",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/app.js",
-    "client": "cd client && yarn dev",
-    "build": "cd client && yarn build",
-    "deploy": "cd client && yarn build && gh-pages -d dist"
+    "install-server": "cd api && yarn add",
+    "start-server": "cd api && node app.js",
+    "install-client": "cd client && yarn add",
+    "build-client": "cd client && yarn build",
+    "start-client": "cd client && yarn start"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "gh-pages": "^6.1.1"
   }
